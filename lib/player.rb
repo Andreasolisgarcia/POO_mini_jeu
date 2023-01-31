@@ -8,7 +8,7 @@ class Player
 
 
     def show_state
-        puts "#{self.name} a #{self.life_points}"
+        puts "#{self.name} a #{self.life_points} points de vie"
     end
 
     def gets_damage(damage)
