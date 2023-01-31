@@ -15,11 +15,6 @@ class Player
         @life_points= @life_points - damage
         if @life_points <= 0 
             puts "le joueur #{@name} a été tué!"
-            if self.class == Player
-                puts  "BRAVO ! TU AS GAGNE"
-            else self.class == HumanPlayer
-                puts "Loser ! Tu as perdu !"
-            end
             exit # pour arreter le jeu une fois que qqn est mort
         end
     end
@@ -79,8 +74,3 @@ class HumanPlayer < Player
     end 
 
 end
-
-
-
-
-#binding.pry

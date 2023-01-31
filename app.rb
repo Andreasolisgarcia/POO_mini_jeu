@@ -1,5 +1,5 @@
 require 'bundler'
-#Bundler.require
+Bundler.require
 
 
 require_relative 'lib/game'
@@ -28,6 +28,7 @@ while player1.life_points >0 || player2.life_points >0
         puts
         player1.show_state
         player2.show_state
+        puts 'Press Enter'
         gets
 end
 

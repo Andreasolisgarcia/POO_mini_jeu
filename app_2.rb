@@ -28,7 +28,7 @@ while user.life_points >0 && (player1.life_points >0 || player2.life_points >0)
     puts "0 - #{player1.name} a #{player1.life_points} points de vie"
     puts "1 - #{player2.name} a #{player2.life_points} points de vie"
     puts
-    print '>'
+    print 'ton choix >'
     choise = gets.chomp
 
     case choise
@@ -44,6 +44,7 @@ while user.life_points >0 && (player1.life_points >0 || player2.life_points >0)
     puts
     puts  "Les autres joueurs t'attaquent !, (prepare-toi ! & press ENTER)"
     puts
+    puts 'Press Enter'
     gets
 
     enemies.each do |enemy|
@@ -52,8 +53,8 @@ while user.life_points >0 && (player1.life_points >0 || player2.life_points >0)
         end
         puts
     end
+    puts 'Press Enter'
     gets
-    system("clear")
     
 end
 
